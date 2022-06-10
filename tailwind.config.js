@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./**/*.html", "./*.html"],
+  content: ["./**/*.html", "./*.html", './node_modules/tw-elements/dist/js/**/*.js'],
   theme: {
     fontFamily: {
       'sans': ['Inter var'],
@@ -7,5 +7,6 @@ module.exports = {
   },
   plugins: [
     require('daisyui'),
+    require('tw-elements/dist/plugin')
   ],
 }

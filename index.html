@@ -1,9 +1,13 @@
-<html data-theme="bumblebee">
+<html data-theme="winter">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
         <link href="built_styles.css" rel="stylesheet">
+
+        <script src="node_modules/tw-elements/dist/js/index.min.js"></script>
+
+        <title>Nyasa</title>
     </head>
     <body>
       <!-- navbar -->
@@ -76,9 +80,9 @@
         <!-- hero -->
         <div class="hero min-h-screen bg-base-100">
             <div class="flex-col hero-content lg:flex-row-reverse">
-              <img src="https://picsum.photos/id/1005/600/600" class="max-w-sm mt-20 lg:mt-2 rounded-lg shadow-2xl"> 
-              <div class="px-8 lg:px-0 lg:mr-32">
-                <h1 class="mb-5 text-5xl font-bold">
+              <img src="Assets/hero.png" class="w-5/6 lg:w-3/5 mt-12 lg:mt-24"> 
+              <div class="px-8 lg:px-0 lg:mr-16">
+                <h1 class="mb-5 text-4xl lg:text-5xl font-bold">
                     Would you like to make a change?
                 </h1> 
                 <p class="mb-5">
@@ -90,103 +94,180 @@
         </div>
 
         <!-- stats -->
-        <div class="w-full stats px-12 lg:px-32">
-            <div class="stat rounded-none place-items-center place-content-center">
-              <div class="stat-figure text-secondary">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>                          
-                </svg>
-              </div> 
-              <div class="stat-title">Downloads</div> 
-              <div class="stat-value">310M</div> 
-              <div class="stat-desc">Jan 1st - Feb 1st</div>
-            </div> 
-            <div class="stat rounded-none place-items-center place-content-center">
-              <div class="stat-figure text-secondary">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current">                
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>          
-                </svg>
-              </div> 
-              <div class="stat-title">New Users</div> 
-              <div class="stat-value">4,200</div> 
-              <div class="stat-desc text-success">↗︎ 400 (22%)</div>
-            </div> 
-            <div class="stat rounded-none place-items-center place-content-center">
-              <div class="stat-figure text-secondary">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current">                 
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path>         
-                </svg>
-              </div> 
-              <div class="stat-title">New Registers</div> 
-              <div class="stat-value">1,200</div> 
-              <div class="stat-desc text-error">↘︎ 90 (14%)</div>
+        <div class="w-full flex flex-col lg:flex-row px-8 lg:px-32 place-content-evenly">
+          <div class="card bg-base-100">
+            <div class="card-body">
+              <div class="flex flex-row gap-8 items-center">
+                <div>
+                  <p>Downloads</p>
+                  <h1 class="text-3xl font-semibold">310M</h1>
+                  <p>Last month</p>
+                </div>
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                    <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                  </svg>
+                </div>
+              </div>
+              
             </div>
+          </div>
+
+          <div class="divider divider-horizontal"></div>
+
+          <div class="card bg-base-100">
+            <div class="card-body">
+              <div class="flex flex-row gap-8 items-center">
+                <div>
+                  <p>Downloads</p>
+                  <h1 class="text-3xl font-semibold">310M</h1>
+                  <p>Last month</p>
+                </div>
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                    <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                  </svg>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="divider divider-horizontal"></div>
+
+          <div class="card bg-base-100">
+            <div class="card-body">
+              <div class="flex flex-row gap-8 items-center">
+                <div>
+                  <p>Downloads</p>
+                  <h1 class="text-3xl font-semibold">310M</h1>
+                  <p>Last month</p>
+                </div>
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                    <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                  </svg>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
         </div>
 
         <!-- photo carousel -->
-        <div class="px-12 lg:px-32">
-            <div class="w-full rounded-lg carousel">
-                <div id="slide1" class="relative w-full pt-8 lg:pt-20 carousel-item">
-                <img src="https://picsum.photos/id/500/800/300" class="w-full rounded-lg"> 
-                <div class="absolute flex justify-between transform left-5 right-5 top-1/2">
-                    <a href="#slide4" class="btn btn-xs lg:btn-md btn-circle">❮</a> 
-                    <a href="#slide2" class="btn btn-xs lg:btn-md btn-circle">❯</a>
-                </div>
-                </div> 
-                <div id="slide2" class="relative w-full pt-8 lg:pt-20 carousel-item">
-                <img src="https://picsum.photos/id/501/800/300" class="w-full rounded-lg"> 
-                <div class="absolute flex justify-between transform left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-xs lg:btn-md btn-circle">❮</a> 
-                    <a href="#slide3" class="btn btn-xs lg:btn-md btn-circle">❯</a>
-                </div>
-                </div> 
-                <div id="slide3" class="relative w-full pt-8 lg:pt-20 carousel-item">
-                <img src="https://picsum.photos/id/502/800/300" class="w-full rounded-lg"> 
-                <div class="absolute flex justify-between transform left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-xs lg:btn-md btn-circle">❮</a> 
-                    <a href="#slide4" class="btn btn-xs lg:btn-md btn-circle">❯</a>
-                </div>
-                </div> 
-                <div id="slide4" class="relative w-full pt-8 lg:pt-20 carousel-item">
-                <img src="https://picsum.photos/id/503/800/300" class="w-full rounded-lg"> 
-                <div class="absolute flex justify-between transform left-5 right-5 top-1/2">
-                    <a href="#slide3" class="btn btn-xs lg:btn-md btn-circle">❮</a> 
-                    <a href="#slide1" class="btn btn-xs lg:btn-md btn-circle">❯</a>
-                </div>
-                </div>
+        <div class="lg:py-16 lg:px-32 px-8 py-8">
+          <div id="carouselExampleCaptions" class="carousel slide relative rounded-xl" data-bs-ride="carousel">
+            <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
             </div>
+            <div class="carousel-inner relative w-full overflow-hidden">
+              <div class="carousel-item active relative float-left w-full">
+                <img
+                  src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg"
+                  class="block w-full"
+                  alt="..."
+                />
+                <div class="carousel-caption hidden md:block absolute text-center">
+                  <h5 class="text-xl">First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item relative float-left w-full">
+                <img
+                  src="https://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg"
+                  class="block w-full"
+                  alt="..."
+                />
+                <div class="carousel-caption hidden md:block absolute text-center">
+                  <h5 class="text-xl">Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item relative float-left w-full">
+                <img
+                  src="https://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg"
+                  class="block w-full"
+                  alt="..."
+                />
+                <div class="carousel-caption hidden md:block absolute text-center">
+                  <h5 class="text-xl">Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
 
         <!-- about -->
-        <div class="hero bg-base-100 lg:py-16">
-          <div class="flex-col hero-content lg:flex-row-reverse">
-            <img src="Assets/about.svg" class="max-w-sm mt-4 lg:mt-2 rounded-lg"> 
-            <div class="px-8 lg:px-0 lg:mr-12">
-              <h2 class="mb-5 text-3xl font-bold">
-                  About Nyasa
-              </h2> 
-              <p class="mb-5">
+        <div id="about" class="hero bg-base-300 text-base-content lg:py-16 lg:px-32 px-8 py-8">
+          <div class="flex-col hero-content lg:flex-row">
+            <div>
+              <h1 class="mb-5 text-4xl lg:text-5xl font-bold">
+                About <span class="text-primary">Nyasa</span>
+              </h1>
+              <p class="lg:text-lg">
                 The word Nyasa means 'trust' in Sanskrit. At Indian Institute of Technology Gandhinagar, 
                 the word means stretching out our trustworthy hands to help little eyes that dream of a 
                 better life under their temporary thatched huts. NYASA, started in 2011, primarily aims 
                 to support and educate the children of migrant construction workers in and around the campus. 
                 Our collective strength 'education' is used as a platform to bring the children from dusty 
                 environs to an open air school, provide them mid-day meal, fruits for good health and provide 
-                basic education on our campus. Various things like clothes, uniforms, books, stationery, 
-                bags, footwear, etc. are distributed from time to time. The focus is the overall development 
-                of the children while keeping them away from the construction sites, and hence, many activities 
-                like Introduction to the world of Computers, Origami sessions, regular sports sessions, 
-                cultural events, medical camps, etc. are organized from time to time.
-              </p> 
-              <p class="mb-5">
-                To know about our activities in detail, please have a look at <a class="link link-primary">Activities</a>
+                basic education on our campus. Various things like clothes, uniforms, books, stationery, bags, 
+                footwear, etc. are distributed from time to time. The focus is the overall development of the 
+                children while keeping them away from the construction sites, and hence, many activities like 
+                Introduction to the world of Computers, Origami sessions, regular sports sessions, cultural events, 
+                medical camps, etc. are organized from time to time.
               </p>
             </div>
           </div>
-      </div>
+        </div>
 
         <!-- footer -->
-        <footer class="p-10 footer bg-base-200 text-base-content footer-center">
+        <footer class="p-10 footer bg-neutral text-neutral-content footer-center">
             <div class="grid grid-flow-col gap-4">
               <a href="activities.html" class="link link-hover">Activities</a> 
               <a href="news.html" class="link link-hover">News</a> 
@@ -197,14 +278,20 @@
             <div>
               <div class="grid grid-flow-col gap-4">
                 
-                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/nyasa_iitgn/">
+                <a class="hover:text-base-100" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/nyasa_iitgn/">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
                     <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                   </svg>
                 </a>
-                <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/NYASA-IIT-Gandhinagar-241515162640418/?fref=nf">
+                <a class="hover:text-base-100" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/NYASA-IIT-Gandhinagar-241515162640418/?fref=nf">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
                     <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+                  </svg>
+                </a>
+
+                <a class="hover:text-base-100" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/nyasa-iit-gandhinagar/">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
                   </svg>
                 </a>
               </div>
