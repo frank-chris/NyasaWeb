@@ -7349,6 +7349,14 @@ textarea.form-control.is-invalid {
   width: 9rem;
 }
 
+.w-64 {
+  width: 16rem;
+}
+
+.w-80 {
+  width: 20rem;
+}
+
 .max-w-md {
   max-width: 28rem;
 }
@@ -7427,6 +7435,10 @@ textarea.form-control.is-invalid {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
 }
 
 .rounded-lg {
@@ -7712,6 +7724,7 @@ textarea.form-control.is-invalid {
 
 ::-webkit-scrollbar {
   width: 10px;
+  height: 10px;
 }
 
 /* Track */
@@ -7811,6 +7824,10 @@ textarea.form-control.is-invalid {
   .md\:block {
     display: block;
   }
+
+  .md\:w-full {
+    width: 100%;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -7860,6 +7877,10 @@ textarea.form-control.is-invalid {
 
   .lg\:w-96 {
     width: 24rem;
+  }
+
+  .lg\:w-full {
+    width: 100%;
   }
 
   .lg\:flex-row {
